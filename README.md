@@ -1,5 +1,5 @@
-# 13-pattern-programs-in-C
-  This repository contains a collection of 13 pattern programs written in the C programming language. These pattern programs are designed to help programmers strengthen their understanding of loops and conditional statements while creating visually appealing patterns. Whether you are a beginner looking to learn C programming or an experienced programmer exploring pattern-based algorithms, this repository provides a hands-on learning experience with C and pattern-based programming.
+# 21-pattern-programs-in-C
+  This repository contains a collection of 21 pattern programs written in the C programming language. These pattern programs are designed to help programmers strengthen their understanding of loops and conditional statements while creating visually appealing patterns. Whether you are a beginner looking to learn C programming or an experienced programmer exploring pattern-based algorithms, this repository provides a hands-on learning experience with C and pattern-based programming.
 </br></br>These C pattern programs can be utilized as a reference or a starting point for your own pattern-based projects. Feel free to fork, modify, and use the code in any way that suits your needs. Happy coding!
 
 1. Sqaure
