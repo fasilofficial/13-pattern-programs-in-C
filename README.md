@@ -497,3 +497,316 @@ void main()
     * * * * * * * * 
   * * * * * * * * * *
 ```
+
+14. Parallel Bar Pattern
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (j == 1 || j == n)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("   ");
+            }
+        }
+        printf("\n");
+    }
+}
+```
+```
+*          * 
+*          * 
+*          * 
+*          * 
+*          * 
+```
+
+15. Hollow Square Pattern
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (i == 1 || i == n || j == 1 || j == n)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+```
+```
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+```
+
+16. Plus Pattern
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (i == n / 2 + 1 || j == n / 2 + 1)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+```
+```
+    *     
+    *     
+* * * * * 
+    *     
+    *     
+```
+
+17. Cross Pattern
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (i == j || i + j == n + 1)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+```
+```
+*       * 
+  *   *   
+    *     
+  *   *   
+*       * 
+```
+
+18. Hollow Increasing Triangle
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (j == 1 || i == n || i == j)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+```
+```
+*
+* *       
+*   *     
+*     *   
+* * * * * 
+```
+
+19. Hollow Decreasing Triangle
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (i == 1 || j == 1 || i + j == n + 1)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+```
+```
+* * * * * 
+*     *   
+*   *     
+* *       
+*
+```
+
+20. Hollow Hill Pattern (Hollow Pyramid)
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j < n; j++)
+        {
+            printf("  ");
+        }
+        for (int j = 1; j < i; j++)
+        {
+            if (j == 1 || i == 5)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            if (j == i || i == n)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+```
+```
+        *         
+      *   *       
+    *       *     
+  *           *   
+* * * * * * * * * 
+```
+
+21. Hollow Diamond Pattern
+```
+#include <stdio.h>
+void main()
+{
+    int n = 5;
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            printf("  ");
+        }
+        for (int j = 1; j < i; j++)
+        {
+            if (j == 1)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            if (j == i)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("  ");
+        }
+        for (int j = i; j < n; j++)
+        {
+            if (j == i)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        for (int j = i; j <= n; j++)
+        {
+            if (j == n)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+
+```
+```
+          *         
+        *   *       
+      *       *     
+    *           *   
+  *               * 
+    *           * 
+      *       *   
+        *   *
+          *
+```
